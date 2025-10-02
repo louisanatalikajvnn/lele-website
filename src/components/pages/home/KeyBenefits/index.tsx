@@ -61,7 +61,6 @@ const KeyBenefits = () => {
           <img className="polka-blue-2" src="static/logo/polka-blue.svg"></img>
         </div>
         <div className="text-container">
-          <img className="polka-blue-1" src="static/logo/polka-blue.svg"></img>
           <div className="main-text">
             <h1>Kenapa Le Le Mandarin</h1>
             {BENEFITS.map((benefit, index) => (
@@ -73,6 +72,16 @@ const KeyBenefits = () => {
               />
             ))}
           </div>
+          <img className="polka-blue-1" src="static/logo/polka-blue.svg"></img>
+          <img className="polka-blue-1" src="static/logo/polka-blue.svg"></img>
+          <img
+            className="polka-yellow-1"
+            src="static/logo/polka-yellow.svg"
+          ></img>
+          <img
+            className="polka-yellow-2"
+            src="static/logo/polka-yellow.svg"
+          ></img>
         </div>
       </div>
     </div>
