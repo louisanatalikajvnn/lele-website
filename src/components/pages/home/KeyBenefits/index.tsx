@@ -28,7 +28,15 @@ const BENEFITS = [
   },
 ];
 
-const BenefitItem = ({ img, title, desc }: any) => {
+const BenefitItem = ({
+  img,
+  title,
+  desc,
+}: {
+  img: string;
+  title: string;
+  desc: string;
+}) => {
   return (
     <div className="benefit-item">
       <div className="icon">
