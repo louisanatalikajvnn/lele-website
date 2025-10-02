@@ -2,27 +2,27 @@ import "./index.scss";
 
 const BENEFITS = [
   {
-    img: "",
+    img: "static/logo/laptop.png",
     title: "Kelas Online",
     desc: "Belajar dimanapun kamu berada",
   },
   {
-    img: "",
+    img: "static/logo/training.png",
     title: "Kelas yang interaktif",
     desc: "Kelas yang interaktif dan terintegrasi dengan budaya China/Taiwan",
   },
   {
-    img: "",
+    img: "static/logo/teacher.png",
     title: "Guru-guru yang asyik",
     desc: "Guru-guru yang asyik dan semangat membersamai belajarmu",
   },
   {
-    img: "",
+    img: "static/logo/profiles.png",
     title: "Kurikulum Fleksibel",
     desc: "Kurikulum yang menyesuaikan kebutuhan dan tujuan belajarmu",
   },
   {
-    img: "",
+    img: "static/logo/deadline.png",
     title: "Fleksibel",
     desc: "Bisa reschedule jadwal les",
   },
@@ -57,17 +57,22 @@ const KeyBenefits = () => {
             </div>
             <img className="polka" src="static/logo/polka-yellow.svg"></img>
           </div>
+          <img className="polka-blue-1" src="static/logo/polka-blue.svg"></img>
+          <img className="polka-blue-2" src="static/logo/polka-blue.svg"></img>
         </div>
         <div className="text-container">
-          <h1>Kenapa Le Le Mandarin</h1>
-          {BENEFITS.map((benefit, index) => (
-            <BenefitItem
-              key={index}
-              img={benefit.img}
-              title={benefit.title}
-              desc={benefit.desc}
-            />
-          ))}
+          <img className="polka-blue-1" src="static/logo/polka-blue.svg"></img>
+          <div className="main-text">
+            <h1>Kenapa Le Le Mandarin</h1>
+            {BENEFITS.map((benefit, index) => (
+              <BenefitItem
+                key={index}
+                img={benefit.img}
+                title={benefit.title}
+                desc={benefit.desc}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

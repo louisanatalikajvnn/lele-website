@@ -1,6 +1,7 @@
 .key-benefits-container {
   background: #f8f8f8;
   height: 100vh;
+  overflow: hidden;
 
   .content {
     display: flex;
@@ -14,6 +15,20 @@
       align-items: center;
       width: fit-content;
       flex-basis: 50%;
+      height: 100%;
+      position: relative;
+
+      .polka-blue-1 {
+        position: absolute;
+        top: 0;
+        right: -4rem;
+      }
+
+      .polka-blue-2 {
+        position: absolute;
+        bottom: 0;
+        left: -4rem;
+      }
 
       .main-image-container {
         position: relative;
@@ -43,16 +58,47 @@
     }
 
     .text-container {
-      background: rgba(#335af3, 0.1);
-      align-self: flex-start;
-      padding-top: 4rem;
-      padding-left: 4rem;
+      position: relative;
+      height: 100%;
       flex-basis: 50%;
 
-      h1 {
-        font-size: 2.5rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
+      .main-text {
+        background: #e4e8f7;
+        align-self: flex-start;
+        padding-top: 12rem;
+        padding-left: 4rem;
+        padding-bottom: 4rem;
+        flex-basis: 50%;
+
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 3rem;
+          color: #224198;
+        }
+
+        .benefit-item {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 2rem;
+
+          .icon {
+            width: 3.6rem;
+          }
+
+          h3 {
+            color: #335af3;
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .polka-blue-1 {
+        position: absolute;
+        bottom: 4rem;
+        right: -4rem;
       }
     }
   }

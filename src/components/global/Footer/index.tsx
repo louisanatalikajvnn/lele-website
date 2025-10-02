@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
-export default function SiteFooter() {
+export default function Footer() {
   return (
     <footer className="bg-customblue text-white py-6 mt-12">
       <div className="container mx-auto px-4 sm:px-8">
